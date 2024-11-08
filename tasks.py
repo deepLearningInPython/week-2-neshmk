@@ -43,7 +43,7 @@ def MSE_func(w, X, y): # give the appropriate name and arguments
     MSE = np.sum((y-f)**2)
     return MSE
 # -----------------------------------------------
- 
+
 # Task 3:
 # Instructions:
 # In the notebook, you wrote a function that returns the gradient vector for the least
