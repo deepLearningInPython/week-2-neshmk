@@ -28,7 +28,7 @@ def test_output_sigmoid():
     sigmoid = lambda x: 1 / (1 + np.exp(-x))
     output = my_mlp(w, X, sigma=sigmoid)
     assert np.all(output >= 0) and np.all(output <= 1), "Output is outside the expected sigmoid range of [0, 1]"
-
+    
 # Test 4: Check output output for wrong handling of input
 def test_output_value():
     output = np.round(my_mlp(w, X),7)
